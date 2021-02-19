@@ -7,6 +7,7 @@
 
         <div class="card-body">
             <h5 class="card-title"> <a href="{{ article.link }}"> {{ article.title }}</a> </h5>
+            <p><small> {{ article.domain() }} </small></p>
             <a href (click)="voteUp()"> <i class="fas fa-arrow-up"></i> upvote</a>
             <a href (click)="voteDown()"> <i class="fas fa-arrow-down"></i> downvote</a>
         </div>
